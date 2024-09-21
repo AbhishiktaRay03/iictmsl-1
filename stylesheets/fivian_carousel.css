@@ -1,0 +1,92 @@
+.carousel-html {
+    font-size: 16px;
+}
+
+.carousel-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.carousel-text {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: center;
+}
+.carousel-text h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    
+}
+.carousel-text span{
+    color: #AE6642;
+}
+.carousel-text p {
+    font-size: 1em;
+    margin-bottom: 10px;
+    
+}
+
+.carousel-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-card {
+    flex: 0 0 calc(33.333% - 20px);
+    margin: 0 10px;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+    transform: scale(0.9);
+    background-color: #f0f0f0;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carousel-card-active {
+    opacity: 1;
+    transform: scale(1.1);
+    z-index: 1;
+    
+}
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.carousel-nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3
+}
+.carousel-nav-dot-active {
+    background-color: #4b4b4b;
+    /* Dark color for the active dot */
+}
